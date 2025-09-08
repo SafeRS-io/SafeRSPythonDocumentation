@@ -1,7 +1,217 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=./model/ScriptingFunctions.html"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SafeRS Python Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section p {
+            margin-bottom: 1.5rem;
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(135deg, #2980b9, #1f4e79);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+        }
+        
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, #7f8c8d, #6c7b7d);
+            box-shadow: 0 4px 12px rgba(149, 165, 166, 0.3);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .feature h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .sections {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SafeRS Python Documentation</h1>
+            <p>Complete API reference and scripting functions for SafeRS automation</p>
+        </div>
+        
+        <div class="sections">
+            <div class="section">
+                <h2>🔧 API Documentation</h2>
+                <p>Comprehensive API reference for all SafeRS managers and utilities. This includes detailed documentation for all API managers, classes, and methods available in the SafeRS framework.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <h3>API Managers</h3>
+                        <p>Complete reference for all API manager classes</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Method Documentation</h3>
+                        <p>Detailed method signatures and parameters</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Code Examples</h3>
+                        <p>Practical usage examples for each API</p>
+                    </div>
+                </div>
+                
+                <a href="./api/SafeRSAPI.html" class="btn">View API Documentation</a>
+            </div>
+            
+            <div class="section">
+                <h2>📝 Scripting Functions</h2>
+                <p>High-level scripting functions and actions for SafeRS automation. These functions provide an easier interface for common automation tasks and scripting scenarios.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <h3>Action Classes</h3>
+                        <p>Pre-built action classes for common tasks</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Utility Functions</h3>
+                        <p>Helper functions for automation scripts</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Quick Reference</h3>
+                        <p>Fast access to commonly used functions</p>
+                    </div>
+                </div>
+                
+                <a href="./model/ScriptingFunctions.html" class="btn btn-secondary">View Scripting Functions</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Choose your preferred documentation format above to get started with SafeRS Python development</p>
+        </div>
+    </div>
+</body>
 </html>
